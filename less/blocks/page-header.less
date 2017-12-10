@@ -1,0 +1,77 @@
+.page-header {
+  padding: 0 30px;
+  padding-top: 65px;
+  padding-bottom: 120px;
+  text-align: center;
+  background-color: #ccc;
+  background-image: url("../img/page-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header__logo {
+  display: block;
+  width: 109px;
+  height: 44px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  img {
+    display: block;
+    width: 109px;
+    height: 44px;
+  }
+}
+
+.page-header__intro {
+  display: inline-block;
+  margin-bottom: 75px;
+}
+
+.page-header__intro-title {
+  display: block;
+  margin-bottom: 32px;
+  font-family: Ubuntu, Tahoma, sans-serif;
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.page-header__intro-subtitle {
+  display: flex;
+  align-items: center;
+  .font-primary-bold();
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  &::before,
+  &::after {
+    display: block;
+    flex-grow: 1;
+    width: 0;
+    height: 2px;
+    background: fade(#fff, 24%);
+  }
+  &::before {
+    margin-right: 20px;
+  }
+  &::after {
+    margin-left: 20px;
+  }
+  @media @tablet-widths {
+    &::before {
+      margin-right: 30px;
+    }
+    &::after {
+      margin-left: 30px;
+    }
+  }
+}
+
+.page-header__btn {
+  display: block;
+  width: 235px;
+  margin: 0 auto;
+}

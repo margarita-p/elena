@@ -1,0 +1,49 @@
+.main-nav {
+  margin-bottom: 44px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  .list-none();
+}
+
+.main-nav__item {
+  margin: 0 15px;
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover,
+    &:focus {
+      color: fade(#fff, 70%);
+    }
+    &:active {
+      color: fade(#fff, 50%);
+    }
+  }
+  &--active {
+
+    a {
+      cursor: default;
+      color: fade(#fff, 50%);
+      &:hover,
+      &:focus {
+        color: fade(#fff, 50%);
+      }
+      &:active {
+        color: fade(#fff, 50%);
+      }
+    }
+  }
+  @media @tablet-widths {
+    margin: 0 20px;
+  }
+}
